@@ -59,7 +59,7 @@ INSERT INTO address_book(FirstName,LastName,Address,City,State,ZIP,PhoneNumber,E
  select * from address_book 
  where city = 'Vaishali' group by FirstName ;
  
- # UC9 - Ability to identify eachAddress Book with name and Type
+ # UC9 - Ability to identify each Address Book with name and Type
  Alter table address_book
  Add DiaryName Varchar(150) NOT NULL first;                          #Added Diary Name Column
  Alter table address_book
