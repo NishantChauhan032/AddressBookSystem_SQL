@@ -78,5 +78,11 @@ select ContactType,count(FirstName)
 from address_book  
 group by contacttype;
 
+# UC11 - Ability to add person to both Friend and Family
+INSERT INTO address_book(DiaryName,FirstName,LastName,Address,City,State,ZIP,PhoneNumber,EmailID,ContactType) VALUES   
+ ('A','Abhishek','Chauhan','Chainpur','Patna','Bihar',844201,7587878776,'abhishek@gmail.com','Family'),
+ ('B','Raj','Priyadarshi','Nawada','Gaya','Bihar',878655,876576871,'priyadarshi@gmail.com','Friend');
+ Select * from address_book;
+
 
 
