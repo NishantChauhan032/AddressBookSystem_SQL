@@ -42,6 +42,19 @@ INSERT INTO address_book(FirstName,LastName,Address,City,State,ZIP,PhoneNumber,E
  Select * from address_book
  where state = 'Jharkhand';                                        # To retrieve contact using state
  
+ #Adding more contacts
+ INSERT INTO address_book(FirstName,LastName,Address,City,State,ZIP,PhoneNumber,EmailID) VALUES   
+ ('Ritesh','Kumar','Chainpur','Vaishali','Bihar',844118,9875753739,'ritesh@gmail.com'),
+ ('Adrija','Chauhan','Goraul','Vaishali','Bihar',844118,9835735768,'adrija@gmail.com'),
+ ('Heera','Thakur','Goraul','Bhagwanpur','Jharkhand',875875,8786567898,'heera@gmail.com');
+ 
+ # UC7 - Ability to understand the size of address book by City and State
+ SELECT city,count(firstname)                                       #Count of address by city
+ FROM address_book GROUP BY city;                                   
+ 
+ SELECT state,count(firstname)                                      #Count of address by state
+ FROM address_book GROUP BY state;
+ 
 
 
 
