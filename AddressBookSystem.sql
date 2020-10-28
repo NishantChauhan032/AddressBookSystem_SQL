@@ -55,6 +55,10 @@ INSERT INTO address_book(FirstName,LastName,Address,City,State,ZIP,PhoneNumber,E
  SELECT state,count(firstname)                                      #Count of address by state
  FROM address_book GROUP BY state;
  
+ # UC8 - Ability to retrieve entries sorted alphabetically by Person’s name for a given city
+ select * from address_book 
+ where city = 'Vaishali' group by FirstName ;
+ 
 
 
 
