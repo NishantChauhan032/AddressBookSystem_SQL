@@ -24,6 +24,11 @@ INSERT INTO address_book(FirstName,LastName,Address,City,State,ZIP,PhoneNumber,E
  ('Anshu','Singh','Goraul','Bhagwanpur','Jharkhand',831014,9988776655,'anshu@gmail.com'),
  ('Narendra','Modi','Center','Delhi','New Delhi',887766,9988775544,'modi@gmail.com');
  SELECT * FROM address_book;
+ 
+ # UC4 - Ability to edit existing contact using name
+ Update address_book
+ set ZIP = 778899,PhoneNumber = 7788998877
+ where FirstName = 'Narendra'; 
 
 
 
