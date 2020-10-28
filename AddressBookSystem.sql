@@ -36,6 +36,12 @@ INSERT INTO address_book(FirstName,LastName,Address,City,State,ZIP,PhoneNumber,E
  where FirstName = 'Narendra';
  SELECT * FROM address_book;
  
+ # UC6 - Ability to retrieve person belonging to a city or state
+ Select * from address_book 
+ where city = 'Vaishali';                                          # To retrieve contact using city
+ Select * from address_book
+ where state = 'Jharkhand';                                        # To retrieve contact using state
+ 
 
 
 
