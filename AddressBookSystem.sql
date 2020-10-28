@@ -29,6 +29,13 @@ INSERT INTO address_book(FirstName,LastName,Address,City,State,ZIP,PhoneNumber,E
  Update address_book
  set ZIP = 778899,PhoneNumber = 7788998877
  where FirstName = 'Narendra'; 
+ SELECT * FROM address_book;
+ 
+ # UC5 - Ability to delete a contact using person's name
+ Delete from address_book
+ where FirstName = 'Narendra';
+ SELECT * FROM address_book;
+ 
 
 
 
