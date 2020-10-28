@@ -73,5 +73,10 @@ UPDATE address_book SET DiaryName = 'A', contacttype = 'Family' WHERE firstname 
 UPDATE address_book SET DiaryName = 'C', contacttype = 'Business' WHERE firstname = 'Heera';
 Select * from address_book;
 
+# UC10 - Ability to get number of contact persons i.e. count by type
+select ContactType,count(FirstName) 
+from address_book  
+group by contacttype;
+
 
 
